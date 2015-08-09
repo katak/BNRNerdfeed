@@ -19,6 +19,7 @@
 		013854CF1B76D572009B72AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013854B71B76D572009B72AA /* UIKit.framework */; };
 		013854D71B76D572009B72AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 013854D51B76D572009B72AA /* InfoPlist.strings */; };
 		013854D91B76D572009B72AA /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854D81B76D572009B72AA /* NerdfeedTests.m */; };
+		013854E71B76D88D009B72AA /* BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854E61B76D88D009B72AA /* BNRCoursesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		013854D41B76D572009B72AA /* NerdfeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NerdfeedTests-Info.plist"; sourceTree = "<group>"; };
 		013854D61B76D572009B72AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		013854D81B76D572009B72AA /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
+		013854E51B76D88D009B72AA /* BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCoursesViewController.h; sourceTree = "<group>"; };
+		013854E61B76D88D009B72AA /* BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCoursesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		013854A71B76D572009B72AA = {
 			isa = PBXGroup;
 			children = (
+				013854E51B76D88D009B72AA /* BNRCoursesViewController.h */,
+				013854E61B76D88D009B72AA /* BNRCoursesViewController.m */,
 				013854B91B76D572009B72AA /* Nerdfeed */,
 				013854D21B76D572009B72AA /* NerdfeedTests */,
 				013854B21B76D572009B72AA /* Frameworks */,
@@ -242,6 +247,7 @@
 			files = (
 				013854C01B76D572009B72AA /* main.m in Sources */,
 				013854C41B76D572009B72AA /* BNRAppDelegate.m in Sources */,
+				013854E71B76D88D009B72AA /* BNRCoursesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
