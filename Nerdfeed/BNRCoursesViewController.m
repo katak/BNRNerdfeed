@@ -32,14 +32,27 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.courses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
+                                                            forIndexPath:indexPath];
+    
+    NSDictionary *course = self.courses[indexPath.row];
+    cell.textLabel.text = course[@"title"];
+    
+    return cell;
 }
 
 - (void)fetchFeed
@@ -54,6 +67,10 @@
                                                                      error:nil];
         self.courses = jsonObject[@"courses"];
         NSLog(@"%@", self.courses);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     }];
     [dataTask resume];
 }
