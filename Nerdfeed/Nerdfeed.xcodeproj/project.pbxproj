@@ -20,6 +20,7 @@
 		013854D71B76D572009B72AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 013854D51B76D572009B72AA /* InfoPlist.strings */; };
 		013854D91B76D572009B72AA /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854D81B76D572009B72AA /* NerdfeedTests.m */; };
 		013854E71B76D88D009B72AA /* BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854E61B76D88D009B72AA /* BNRCoursesViewController.m */; };
+		013854EA1B76F738009B72AA /* BNRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854E91B76F738009B72AA /* BNRWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		013854D81B76D572009B72AA /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
 		013854E51B76D88D009B72AA /* BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCoursesViewController.h; sourceTree = "<group>"; };
 		013854E61B76D88D009B72AA /* BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCoursesViewController.m; sourceTree = "<group>"; };
+		013854E81B76F738009B72AA /* BNRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRWebViewController.h; sourceTree = "<group>"; };
+		013854E91B76F738009B72AA /* BNRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			children = (
 				013854E51B76D88D009B72AA /* BNRCoursesViewController.h */,
 				013854E61B76D88D009B72AA /* BNRCoursesViewController.m */,
+				013854E81B76F738009B72AA /* BNRWebViewController.h */,
+				013854E91B76F738009B72AA /* BNRWebViewController.m */,
 				013854B91B76D572009B72AA /* Nerdfeed */,
 				013854D21B76D572009B72AA /* NerdfeedTests */,
 				013854B21B76D572009B72AA /* Frameworks */,
@@ -245,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013854EA1B76F738009B72AA /* BNRWebViewController.m in Sources */,
 				013854C01B76D572009B72AA /* main.m in Sources */,
 				013854C41B76D572009B72AA /* BNRAppDelegate.m in Sources */,
 				013854E71B76D88D009B72AA /* BNRCoursesViewController.m in Sources */,
